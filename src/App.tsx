@@ -80,6 +80,11 @@ function App() {
             <PortfolioPage />
           </ProtectedRoute>
         } />
+        <Route path="/portfolio/:userId" element={
+          <ProtectedRoute>
+            <PortfolioPage />
+          </ProtectedRoute>
+        } />
         <Route path="/achievements" element={
           <ProtectedRoute>
             <AchievementsPage />
